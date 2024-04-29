@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row" id="Navbar">
+                <div
+                    class="col-12  col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <nav
+                        class="navbar navbar-expand-lg ">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="index.html"><img
+                                    src="images/logo1.jpg" width="50px"
+                                    height="50px" style="border-radius: 15px;"> Film Gezegeni</a>
+                            <button class="navbar-toggler" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse"
+                                id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li
+                                        style="display: flex; justify-content: center; align-items: center; opacity: 75%; padding: 0 1px 0 0;"><a
+                                            href="index.html">Ana Sayfa</a></li>
+                                    <li
+                                        style="display: flex; justify-content: center; align-items: center; opacity: 75%; padding: 0 0 0 8px;"><a
+                                            href="kategori.html">Kategoriler</a></li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle"
+                                            href="#" role="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Diziler
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item"
+                                                    href="diziler.html">Diziler</a></li>
+                                            <hr
+                                                class="dropdown-divider">
+                                            <li><a class="dropdown-item"
+                                                    href="#">En Çok İzlenen
+                                                    Diziler</a></li>
+                                            <li></li>
+                                            <li><a class="dropdown-item"
+                                                    href="#">Yerli
+                                                    Diziler</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="#">Yabancı
+                                                    Diziler</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle"
+                                            href="#" role="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Filmler
+                                        </a>
+
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item active"
+                                                    href="Filmler.html">Filmler</a></li>
+                                            <hr
+                                                class="dropdown-divider">
+                                            <li><a class="dropdown-item"
+                                                    href="IMDb'siEnYüksekFilmler.html">IMDb Top 50</a></li>
+                                            <li></li>
+                                            <li><a class="dropdown-item"
+                                                    href="#">Yerli
+                                                    Filmler</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="#">Yabancı
+                                                    Filmler</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle"
+                                            href="#" role="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Çizgi Diziler
+                                        </a>
+                                        <ul class="dropdown-menu">
+
+                                            <li><a class="dropdown-item"
+                                                    href="#">Çizgi
+                                                    Diziler</a></li>
+                                            <li><hr
+                                                    class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item"
+                                                    href="#">En Çok İzlenen
+                                                    Çizgi Diziler</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="#">Yerli Çizgi
+                                                    Diziler</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="#">Yabancı Çizgi
+                                                    Diziler</a></li>
+
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2"
+                                        type="search" placeholder="Arama"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-primary"
+                                        type="submit">Arama</button>
+                                </form>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h1 style="font-size: 50px;">Vizyondaki Filmler <hr></h1>
+
+                </div>
+            </div>
+            <div class="row" id="Menu">
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/kung-fu-panda-4-1709113334.jpg" alt
+                                class="img-fluid" width="203px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                            <a href="#">
+                                <h4 class="mb-0"> Kung Fu Panda 4</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary"> 5 Nisan
+                                    2024</div>
+                                <a href="kategori.html"> <span
+                                        class="badge text-bg-dark align-self-start">
+                                        Animasyon, Komedi</span>
+                                </a>
+                                <a href="FilmDetay.html">
+                                    <button class="btn btn-outline-primary"
+                                        style="margin-top: 5px;"
+                                        type="submit">Fragmanı İzle</button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/godzilla-vs-kong-2-1712149157.jpg"
+                                width="203px"
+                                height="280px" alt
+                                class="img-fluid">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                            <a href="FilmDetay2.html">
+                                <h4 class="mb-0"> Godzilla x Kong: Yeni
+                                    İmparatorluk</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary"> 5 Nisan
+                                    2024</div>
+                                <a href="kategori.html"> <span
+                                        class="badge text-bg-dark align-self-start">Bilim
+                                        Kurgu, Aksiyon
+                                    </span>
+                                </a>
+                                <a href="FilmDetay2.html">
+                                    <button class="btn btn-outline-primary"
+                                        style="margin-top: 5px;"
+                                        type="submit">Fragmanı İzle</button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6" style="margin-top: 5px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/icsavas.jpg" alt class="img-fluid"
+                                width="188px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                            <a href="#">
+                                <h4 class="mb-0">İç Savaş</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary"> 19 Nisan
+                                    2024</div>
+                                <a href="kategori.html"> <span
+                                        class="badge text-bg-dark align-self-start">
+                                        Aksiyon, Dram, Savaş</span>
+                                </a>
+                                <a href="FilmDetay.html">
+                                    <button class="btn btn-outline-primary"
+                                        style="margin-top: 5px;"
+                                        type="submit">Fragmanı İzle</button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6" style="margin-top: 5px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/meraklikedi.jpg" alt
+                                class="img-fluid" width="194px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Meraklı Kedinin 10 Yaşamı
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary"> 19 Nisan
+                                    2024</div>
+                                <a href="kategori.html"> <span
+                                        class="badge text-bg-dark align-self-start">
+                                        Animasyon, Aile</span>
+                                </a>
+                                <a href="FilmDetay.html">
+                                    <button class="btn btn-outline-primary"
+                                        style="margin-top: 5px;"
+                                        type="submit">Fragmanı İzle</button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6" style="margin-top: 5px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/arap-kadri-1713365342.jpg"
+                                width="201px"
+                                height="280px" alt
+                                class="img-fluid">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                            <a href="#">
+                                <h4 class="mb-0"> Arap Kadri
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary"> 19 Nisan
+                                    2024</div>
+                                <a href="kategori.html"> <span
+                                        class="badge text-bg-dark align-self-start">Komedi
+                                    </span>
+                                </a>
+                                <a href="FilmDetay.html">
+                                    <button class="btn btn-outline-primary"
+                                        style="margin-top: 5px;"
+                                        type="submit">Fragmanı İzle</button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6" style="margin-top: 5px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/hep-yek-7-1712147412.jpg" alt
+                                class="img-fluid"
+                                width="201px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Hep Yek: Aşiret</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary"> 5 Nisan
+                                    2024</div>
+                                <a href="kategori.html"> <span
+                                        class="badge text-bg-dark align-self-start">
+                                        Komedi</span>
+                                </a>
+                                <a href="FilmDetay.html">
+                                    <button class="btn btn-outline-primary"
+                                        style="margin-top: 5px;"
+                                        type="submit">Fragmanı İzle</button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row" id="Menu" style="margin-top: 15px;">
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/abigail-1713352732.jpg" alt
+                                class="img-fluid" width="197px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Tutsak Abigail
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary"> 19 Nisan
+                                    2024</div>
+                                <a href="kategori.html"> <span
+                                        class="badge text-bg-dark align-self-start">
+                                        Gerilim, Komedi, Korku</span>
+                                </a>
+                                <a href="FilmDetay.html">
+                                    <button class="btn btn-outline-primary"
+                                        style="margin-top: 5px;"
+                                        type="submit">Fragmanı İzle</button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img
+                                src="images/siberay-gunes-firtinasi-1710506146.jpg"
+                                width="203px"
+                                height="280px" alt
+                                class="img-fluid">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                            <a href="#">
+                                <h4 class="mb-0"> Ekip: Siberay - Güneş
+                                    Fırtınası
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary"> 5 Nisan
+                                    2024</div>
+                                <a href="kategori.html"> <span
+                                        class="badge text-bg-dark align-self-start">Animasyon,
+                                        Çocuk, Macera
+                                    </span>
+                                </a>
+                                <a href="FilmDetay.html">
+                                    <button class="btn btn-outline-primary"
+                                        style="margin-top: 5px;"
+                                        type="submit">Fragmanı İzle</button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6" style="margin-top: 5px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/ask-filmi-1713773041.jpg" alt
+                                class="img-fluid"
+                                width="194px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Aşk Filmi
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary"> 19 Nisan
+                                    2024</div>
+                                <a href="kategori.html"> <span
+                                        class="badge text-bg-dark align-self-start">
+                                        Romantik</span>
+                                </a>
+                                <a href="FilmDetay.html">
+                                    <button class="btn btn-outline-primary"
+                                        style="margin-top: 5px;"
+                                        type="submit">Fragmanı İzle</button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6 " style="margin-top: 5px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/bulanik-1713039155.jpg" alt
+                                class="img-fluid" width="194px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Bulanık
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary"> 19 Nisan
+                                    2024</div>
+                                <a href="kategori.html"> <span
+                                        class="badge text-bg-dark align-self-start">
+                                        Gerilim</span>
+                                </a>
+                                <a href="FilmDetay.html">
+                                    <button class="btn btn-outline-primary"
+                                        style="margin-top: 5px;"
+                                        type="submit">Fragmanı İzle</button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6" style="margin-top: 5px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img
+                                src="images/demon-slayer-kimetsu-no-yaiba-to-the-swordsmith-village-1713359272.jpg"
+                                width="199px"
+                                height="280px" alt
+                                class="img-fluid">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                            <a href="#">
+                                <h4 class="mb-0"> Demon Slayer: Kimetsu No Yaiba
+                                    - To the Swordsmith Village
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary"> 19 Nisan
+                                    2024</div>
+                                <a href="kategori.html"> <span
+                                        class="badge text-bg-dark align-self-start">Animasyon,
+                                        Aksiyon
+                                    </span>
+                                </a>
+                                <a href="FilmDetay.html">
+                                    <button class="btn btn-outline-primary"
+                                        style="margin-top: 5px;"
+                                        type="submit">Fragmanı İzle</button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6" style="margin-top: 5px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/kuffar-1712131515.jpg" alt
+                                class="img-fluid"
+                                width="201px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Küffar</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary"> 5 Nisan
+                                    2024</div>
+                                <a href="kategori.html"> <span
+                                        class="badge text-bg-dark align-self-start">
+                                        Korku</span>
+                                </a>
+                                <a href="FilmDetay.html">
+                                    <button class="btn btn-outline-primary"
+                                        style="margin-top: 5px;"
+                                        type="submit">Fragmanı İzle</button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row" id="Menu" style="margin-top: 15px;">
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/kung-fu-panda-4-1709113334.jpg" alt
+                                class="img-fluid" width="203px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                            <a href="#">
+                                <h4 class="mb-0"> Kung Fu Panda 4</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary"> 5 Nisan
+                                    2024</div>
+                                <a href="kategori.html"> <span
+                                        class="badge text-bg-dark align-self-start">
+                                        Animasyon, Komedi</span>
+                                </a>
+                                <a href="FilmDetay.html">
+                                    <button class="btn btn-outline-primary"
+                                        style="margin-top: 5px;"
+                                        type="submit">Fragmanı İzle</button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/godzilla-vs-kong-2-1712149157.jpg"
+                                width="203px"
+                                height="280px" alt
+                                class="img-fluid">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                            <a href="#">
+                                <h4 class="mb-0"> Godzilla x Kong: Yeni
+                                    İmparatorluk</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary"> 5 Nisan
+                                    2024</div>
+                                <a href="kategori.html"> <span
+                                        class="badge text-bg-dark align-self-start">Bilim
+                                        Kurgu, Aksiyon
+                                    </span>
+                                </a>
+                                <a href="FilmDetay.html">
+                                    <button class="btn btn-outline-primary"
+                                        style="margin-top: 5px;"
+                                        type="submit">Fragmanı İzle</button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6" style="margin-top: 5px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/icsavas.jpg" alt class="img-fluid"
+                                width="188px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                            <a href="#">
+                                <h4 class="mb-0">İç Savaş</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary"> 19 Nisan
+                                    2024</div>
+                                <a href="kategori.html"> <span
+                                        class="badge text-bg-dark align-self-start">
+                                        Aksiyon, Dram, Savaş</span>
+                                </a>
+                                <a href="FilmDetay.html">
+                                    <button class="btn btn-outline-primary"
+                                        style="margin-top: 5px;"
+                                        type="submit">Fragmanı İzle</button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6 " style="margin-top: 5px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/meraklikedi.jpg" alt
+                                class="img-fluid" width="194px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Meraklı Kedinin 10 Yaşamı
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary"> 19 Nisan
+                                    2024</div>
+                                <a href="kategori.html"> <span
+                                        class="badge text-bg-dark align-self-start">
+                                        Animasyon, Aile</span>
+                                </a>
+                                <a href="FilmDetay.html">
+                                    <button class="btn btn-outline-primary"
+                                        style="margin-top: 5px;"
+                                        type="submit">Fragmanı İzle</button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6" style="margin-top: 5px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/arap-kadri-1713365342.jpg"
+                                width="201px"
+                                height="280px" alt
+                                class="img-fluid">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                            <a href="#">
+                                <h4 class="mb-0"> Arap Kadri
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary"> 19 Nisan
+                                    2024</div>
+                                <a href="kategori.html"> <span
+                                        class="badge text-bg-dark align-self-start">Komedi
+                                    </span>
+                                </a>
+                                <a href="FilmDetay.html">
+                                    <button class="btn btn-outline-primary"
+                                        style="margin-top: 5px;"
+                                        type="submit">Fragmanı İzle</button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6" style="margin-top: 5px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/hep-yek-7-1712147412.jpg" alt
+                                class="img-fluid"
+                                width="201px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Hep Yek: Aşiret</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary"> 5 Nisan
+                                    2024</div>
+                                <a href="kategori.html"> <span
+                                        class="badge text-bg-dark align-self-start">
+                                        Komedi</span>
+                                </a>
+                                <a href="FilmDetay.html">
+                                    <button class="btn btn-outline-primary"
+                                        style="margin-top: 5px;"
+                                        type="submit">Fragmanı İzle</button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row" id="Menu" style="margin-top: 15px;">
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/abigail-1713352732.jpg" alt
+                                class="img-fluid" width="197px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Tutsak Abigail
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary"> 19 Nisan
+                                    2024</div>
+                                <a href="kategori.html"> <span
+                                        class="badge text-bg-dark align-self-start">
+                                        Gerilim, Komedi, Korku</span>
+                                </a>
+                                <a href="FilmDetay.html">
+                                    <button class="btn btn-outline-primary"
+                                        style="margin-top: 5px;"
+                                        type="submit">Fragmanı İzle</button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img
+                                src="images/siberay-gunes-firtinasi-1710506146.jpg"
+                                width="203px"
+                                height="280px" alt
+                                class="img-fluid">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                            <a href="#">
+                                <h4 class="mb-0"> Ekip: Siberay - Güneş
+                                    Fırtınası
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary"> 5 Nisan
+                                    2024</div>
+                                <a href="kategori.html"> <span
+                                        class="badge text-bg-dark align-self-start">Animasyon,
+                                        Çocuk, Macera
+                                    </span>
+                                </a>
+                                <a href="FilmDetay.html">
+                                    <button class="btn btn-outline-primary"
+                                        style="margin-top: 5px;"
+                                        type="submit">Fragmanı İzle</button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6" style="margin-top: 5px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/ask-filmi-1713773041.jpg" alt
+                                class="img-fluid"
+                                width="194px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Aşk Filmi
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary"> 19 Nisan
+                                    2024</div>
+                                <a href="kategori.html"> <span
+                                        class="badge text-bg-dark align-self-start">
+                                        Romantik</span>
+                                </a>
+                                <a href="FilmDetay.html">
+                                    <button class="btn btn-outline-primary"
+                                        style="margin-top: 5px;"
+                                        type="submit">Fragmanı İzle</button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6 " style="margin-top: 5px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/bulanik-1713039155.jpg" alt
+                                class="img-fluid" width="194px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Bulanık
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary"> 19 Nisan
+                                    2024</div>
+                                <a href="kategori.html"> <span
+                                        class="badge text-bg-dark align-self-start">
+                                        Gerilim</span>
+                                </a>
+                                <a href="FilmDetay.html">
+                                    <button class="btn btn-outline-primary"
+                                        style="margin-top: 5px;"
+                                        type="submit">Fragmanı İzle</button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6" style="margin-top: 5px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img
+                                src="images/demon-slayer-kimetsu-no-yaiba-to-the-swordsmith-village-1713359272.jpg"
+                                width="199px"
+                                height="280px" alt
+                                class="img-fluid">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                            <a href="#">
+                                <h4 class="mb-0"> Demon Slayer: Kimetsu No Yaiba
+                                    - To the Swordsmith Village
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary"> 19 Nisan
+                                    2024</div>
+                                <a href="kategori.html"> <span
+                                        class="badge text-bg-dark align-self-start">Animasyon,
+                                        Aksiyon
+                                    </span>
+                                </a>
+                                <a href="FilmDetay.html">
+                                    <button class="btn btn-outline-primary"
+                                        style="margin-top: 5px;"
+                                        type="submit">Fragmanı İzle</button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6" style="margin-top: 5px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/kuffar-1712131515.jpg" alt
+                                class="img-fluid"
+                                width="201px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Küffar</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary"> 5 Nisan
+                                    2024</div>
+                                <a href="kategori.html"> <span
+                                        class="badge text-bg-dark align-self-start">
+                                        Korku</span>
+                                </a>
+                                <a href="FilmDetay.html">
+                                    <button class="btn btn-outline-primary"
+                                        style="margin-top: 5px;"
+                                        type="submit">Fragmanı İzle</button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row" id="footer">
+                <div class="col-12">
+                  <footer class="py-5">
+                    <div class="row">
+                      <div class="col-6 col-md-2 mb-3">
+                        <h5>Bölüm</h5>
+                        <ul class="nav flex-column">
+                          <li class="nav-item mb-2"><a
+                              href="index.html"
+                              class="nav-link p-0 text-body-secondary">Ana
+                              Sayfa</a></li>
+                          <li class="nav-item mb-2"><a href="#"
+                              class="nav-link p-0 text-body-secondary">İletişim</a></li>
+                          <li class="nav-item mb-2"><a
+                              href="kategori.html"
+                              class="nav-link p-0 text-body-secondary">Kategoriler</a></li>
+                          <li class="nav-item mb-2"><a href="#"
+                              class="nav-link p-0 text-body-secondary">Filmler</a></li>
+                          <li class="nav-item mb-2"><a href="#"
+                              class="nav-link p-0 text-body-secondary">Diziler</a></li>
+                          <li class="nav-item mb-2"><a href="#"
+                              class="nav-link p-0 text-body-secondary">Hakkımızda</a></li>
+                        </ul>
+        
+                      </div>
+                      <div class="col-6 col-md-2 mb-3">
+                        <a href="#"
+                          class="active"><h5>Kategoriler</h5></a>
+                        <ul class="nav flex-column">
+                          <li class="nav-item mb-2"><a
+                              href="kategori.html"
+                              class="nav-link p-0 text-body-secondary">Aksiyon</a></li>
+                          <li class="nav-item mb-2"><a
+                              href="kategori.html"
+                              class="nav-link p-0 text-body-secondary">Macera</a></li>
+                          <li class="nav-item mb-2"><a
+                              href="kategori.html"
+                              class="nav-link p-0 text-body-secondary">Bilim
+                              Kurgu</a></li>
+                          <li class="nav-item mb-2"><a
+                              href="kategori.html"
+                              class="nav-link p-0 text-body-secondary">Dram</a></li>
+                          <li class="nav-item mb-2"><a
+                              href="kategori.html"
+                              class="nav-link p-0 text-body-secondary">Aşk</a></li>
+                        </ul>
+                      </div>
+        
+                      <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                          <h5>Daha fazla film için katılmayı
+                            unutmayın.</h5>
+                          <p>Her hafta 2 yeni film.</p>
+                          <form>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1"
+                                class="form-label">Email
+                                Adresi</label>
+                              <input type="email"
+                                class="form-control"
+                                id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                              <div id="emailHelp"
+                                class="form-text">E-postanızı
+                                asla
+                                başkasıyla
+                                paylaşmayacağız.</div>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1"
+                                class="form-label">Şifre</label>
+                              <input type="password"
+                                class="form-control"
+                                id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                              <input type="checkbox"
+                                class="form-check-input"
+                                id="exampleCheck1">
+                              <label class="form-check-label"
+                                for="exampleCheck1">Beni
+                                hatırla</label>
+                            </div>
+                            <button type="submit"
+                              class="btn btn-primary">Katıl</button>
+        
+                          </form>
+                        </form>
+                      </div>
+                    </div>
+        
+                    <div
+                      class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                      <p>&copy; 2024 Company, Inc. Tüm hakları
+                        saklıdır.</p>
+        
+                    </div>
+                  </footer>
+                </div>
+              </div>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    </body>
+</html>

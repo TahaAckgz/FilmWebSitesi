@@ -1,0 +1,2073 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row" id="Navbar">
+                <div
+                    class="col-12  col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <nav
+                        class="navbar navbar-expand-lg ">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="index.html"><img
+                                    src="images/logo1.jpg" width="50px"
+                                    height="50px" style="border-radius: 15px;">
+                                Film Gezegeni</a>
+                            <button class="navbar-toggler" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse"
+                                id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li
+                                        style="display: flex; justify-content: center; align-items: center; opacity: 75%; padding: 0 1px 0 0;"><a
+                                            href="index.html">Ana Sayfa</a></li>
+                                    <li
+                                        style="display: flex; justify-content: center; align-items: center; opacity: 75%; padding: 0 0 0 8px;"><a
+                                            href="kategori.html">Kategoriler</a></li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle"
+                                            href="#" role="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Diziler
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item"
+                                                    href="diziler.html">Diziler</a></li>
+                                            <hr
+                                                class="dropdown-divider">
+                                            <li><a class="dropdown-item"
+                                                    href="#">En Çok İzlenen
+                                                    Diziler</a></li>
+                                            <li></li>
+                                            <li><a class="dropdown-item"
+                                                    href="#">Yerli
+                                                    Diziler</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="#">Yabancı
+                                                    Diziler</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle"
+                                            href="#" role="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Filmler
+                                        </a>
+
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item"
+                                                    href="Filmler.html">Filmler</a></li>
+                                            <hr
+                                                class="dropdown-divider">
+                                            <li><a class="dropdown-item active"
+                                                    href="IMDb'siEnYüksekFilmler.html">IMDb Top 50 </a></li>
+                                            <li></li>
+                                            <li><a class="dropdown-item"
+                                                    href="#">Yerli
+                                                    Filmler</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="#">Yabancı
+                                                    Filmler</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle"
+                                            href="#" role="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Çizgi Diziler
+                                        </a>
+                                        <ul class="dropdown-menu">
+
+                                            <li><a class="dropdown-item"
+                                                    href="#">Çizgi
+                                                    Diziler</a></li>
+                                            <li><hr
+                                                    class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item"
+                                                    href="#">En Çok İzlenen
+                                                    Çizgi Diziler</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="#">Yerli Çizgi
+                                                    Diziler</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="#">Yabancı Çizgi
+                                                    Diziler</a></li>
+
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2"
+                                        type="search" placeholder="Arama"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success"
+                                        type="submit">Arama</button>
+                                </form>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h2 style="font-size: 60px;">IMDb'si En Yüksek Filmler</h2>
+                    <hr>
+
+                </div>
+
+            </div>
+            <div class="row" id="Menu">
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/220px-Esaretin-bedeli.jpg" alt
+                                class="img-fluid"
+                                width="197px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>1</h1></strong>
+                            <a href="Esaretin_Bedeli.html">
+                                <h4 class="mb-0"> Esaretin Bedeli</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1994</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">142dk</span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/baba.jpg"
+                                width="206px"
+                                height="280px" alt class="img-fluid">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>2</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0"> Baba</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1972
+                                </div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">
+                                    175dk
+                                </span>
+
+                            </div>
+                            <a href="baba.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/kara.png" alt class="img-fluid"
+                                width="203px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>3</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Kara Şövalye</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">
+                                    2008</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">152dk</span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/BitmeyenSınav.jpg" alt
+                                class="img-fluid" width="194px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>4</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Bitmeyen Sınav</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">2023</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">147dk</span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/Schindler'inListesi.jpg" alt
+                                class="img-fluid"
+                                width="187px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>5</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Schindler'in Listesi</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1993</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">
+                                    195dk</span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img
+                                src="images/YüzüklerinEfendisi'KralınDönüşü-film.jpg"
+                                alt
+                                class="img-fluid" width="190px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>6</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Yüzüklerin Efendisi: Kralın
+                                    Dönüşü</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">2003</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">201dk</span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row" id="Menu">
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/baba-2-1660915257.jpg" alt
+                                class="img-fluid"
+                                width="207px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>7</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Baba 2</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1974</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">202dk</span>
+
+                            </div>
+                            <a href="baba.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/12_kızgın_adam.jpg"
+                                width="195px"
+                                height="280px" alt class="img-fluid">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>8</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">12 Öfkeli Adam</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1957
+                                </div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">
+                                    96dk
+                                </span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/ucuz.jpg" alt class="img-fluid"
+                                width="201px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>9</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Ucuz Roman</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">
+                                    1994</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">154dk</span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/yüzüklerinefendisi.jpg" alt
+                                class="img-fluid"
+                                width="210px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>10</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Yüzüklerin Efendisi: Yüzük
+                                    Kardeşliği</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1 Mart
+                                    2024</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">
+                                    165dk</span>
+
+                            </div>
+                            <a href="Yeşil_Yol.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/dune-2-1707397100.jpg" alt
+                                class="img-fluid"
+                                width="190px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>11</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Dune: Çöl Gezegeni Bölüm
+                                    İki</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1 Mart
+                                    2024</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">
+                                    165dk</span>
+
+                            </div>
+                            <a href="Yeşil_Yol.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/başlan.jpg"
+                                alt
+                                class="img-fluid" width="193px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>12</h1></strong>
+                            <a href="Başlangıç.html">
+                                <h4 class="mb-0">Başlangıç</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">2010</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">150dk</span>
+
+                            </div>
+                            <a href="Başlangıç.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row" id="Menu">
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/dovuss.jpg" alt
+                                class="img-fluid"
+                                width="188px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>13</h1></strong>
+                            <a href="Esaretin_Bedeli.html">
+                                <h4 class="mb-0">Dövüş Kulübü
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1998</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">139dk</span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/forrest.webp"
+                                width="219px"
+                                height="280px" alt class="img-fluid">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>14</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0"> Forrest Gump
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1994
+                                </div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">
+                                    142dk
+                                </span>
+
+                            </div>
+                            <a href="baba.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/iyik.webp" alt class="img-fluid"
+                                width="209px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>15</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">İyi, Kötü ve Çirkin
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">
+                                    1966</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">161dk</span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img
+                                src="images/220px-YüzüklerinEfendisi'İkiKule-film.jpg"
+                                alt
+                                class="img-fluid" width="189px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>16</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Yüzüklerin Efendisi: İki
+                                    Kule</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">2002</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">179dk</span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/inters.jpg" alt
+                                class="img-fluid"
+                                width="207px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>17</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Yıldızlararası</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">2014</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">
+                                    169dk</span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img
+                                src="images/matrix.jpg"
+                                alt
+                                class="img-fluid" width="187px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>18</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Matrix</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1999</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">136dk</span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row" id="Menu">
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/Goodfellas.jpg" alt
+                                class="img-fluid"
+                                width="207px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>19</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Sıkı Dostlar
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1990</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">145dk</span>
+
+                            </div>
+                            <a href="baba.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/starwarsimp.jpg"
+                                width="193px"
+                                height="280px" alt class="img-fluid">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>20</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Yıldız Savaşları: İmparator
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1980
+                                </div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">
+                                    124dk
+                                </span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/orumcek.jpg" alt class="img-fluid"
+                                width="190px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>21</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Örümcek-Adam: Örümcek Evrenine
+                                    Geçiş
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">
+                                    2023</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">140dk</span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/kuzular.jpg" alt
+                                class="img-fluid"
+                                width="189px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>22</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Kuzuların Sessizliği
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1991</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">
+                                    118dk</span>
+
+                            </div>
+                            <a href="Yeşil_Yol.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/YesilYol.jpg" alt
+                                class="img-fluid"
+                                width="190px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>23</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Yeşil Yol</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1999</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">
+                                    189dk</span>
+
+                            </div>
+                            <a href="Yeşil_Yol.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/7.webp"
+                                alt
+                                class="img-fluid" width="210px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>24</h1></strong>
+                            <a href="Başlangıç.html">
+                                <h4 class="mb-0">Yedi</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1995</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">150dk</span>
+
+                            </div>
+                            <a href="Başlangıç.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row" id="Menu">
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/starwarsyeniumut.jpg" alt
+                                class="img-fluid"
+                                width="200px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>25</h1></strong>
+                            <a href="Esaretin_Bedeli.html">
+                                <h4 class="mb-0"> Yıldız Savaşları: Bölüm IV -
+                                    Yeni Bir Umut
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1977</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">121dk</span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/Tanrı Kent.jpg"
+                                width="200px"
+                                height="280px" alt class="img-fluid">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>26</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0"> Tanrı Kent
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">2002
+                                </div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">
+                                    130dk
+                                </span>
+
+                            </div>
+                            <a href="baba.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img
+                                src="images/Ruhların Kaçışı.webp"
+                                alt class="img-fluid"
+                                width="210px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>27</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Ruhların Kaçışı
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">
+                                    2001</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">125dk</span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/Er Ryan'ı Kurtarmak.png" alt
+                                class="img-fluid" width="198"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>28</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Er Ryan'ı Kurtarmak
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1988</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">169dk</span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/Terminatör2.webp" alt
+                                class="img-fluid"
+                                width="190px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>29</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Terminatör 2: Mahşer Günü
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1993</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">
+                                    137dk</span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img
+                                src="images/hayat-guzeldir.jpg"
+                                alt
+                                class="img-fluid" width="197px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>30</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Hayat Güzeldir
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">2003</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">116dk</span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row" id="Menu">
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/Yedi Samuray.png" alt
+                                class="img-fluid"
+                                width="207px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>31</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Yedi Samuray: Kanlı Pirinç
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1954</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">210dk</span>
+
+                            </div>
+                            <a href="baba.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/220px-Şahane_hayat_afiş.jpg"
+                                width="192px"
+                                height="280px" alt class="img-fluid">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>32</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Şahane Hayat
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1946
+                                </div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">
+                                    130dk
+                                </span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/Seppuku.jpg" alt class="img-fluid"
+                                width="196px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>33</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Seppuku</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">
+                                    1962</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">133dk</span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/Yaratık_film_posteri.jpg" alt
+                                class="img-fluid"
+                                width="196px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>34</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Yaratık</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1979</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">
+                                    120dk</span>
+
+                            </div>
+                            <a href="Yeşil_Yol.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/Gladyatör.jpg" alt
+                                class="img-fluid"
+                                width="176px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>35</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Gladyatör</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">
+                                    2000</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">
+                                    155dk</span>
+
+                            </div>
+                            <a href="Yeşil_Yol.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/Parazit.jpg"
+                                alt
+                                class="img-fluid" width="193px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>36</h1></strong>
+                            <a href="Başlangıç.html">
+                                <h4 class="mb-0">Parazit</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">2019</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">132dk</span>
+
+                            </div>
+                            <a href="Başlangıç.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row" id="Menu">
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/Köstebek.webp" alt
+                                class="img-fluid"
+                                width="220px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>37</h1></strong>
+                            <a href="Esaretin_Bedeli.html">
+                                <h4 class="mb-0"> Köstebek</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">2006</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">151dk</span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/Zincirsiz.jpg"
+                                width="219px"
+                                height="280px" alt class="img-fluid">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>38</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0"> Zincirsiz</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">2002
+                                </div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">
+                                    165dk
+                                </span>
+
+                            </div>
+                            <a href="baba.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/Whiplash.webp" alt
+                                class="img-fluid"
+                                width="194px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>39</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Whiplash</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">
+                                    2014</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">104dk</span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/Sevginin Gücü.jpg" alt
+                                class="img-fluid" width="196px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>40</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Sevginin Gücü
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1994</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">110dk</span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/Prestij.jpg" alt
+                                class="img-fluid"
+                                width="210"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>41</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Prestij</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">2006</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">
+                                    130dk</span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img
+                                src="images/Geleceğe Dönüş.jpg"
+                                alt
+                                class="img-fluid" width="180px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>42</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Geleceğe Dönüş
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1985</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">116dk</span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row" id="Menu">
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/Olağan Şüpheliler.jpg" alt
+                                class="img-fluid"
+                                width="199px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>43</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Olağan Şüpheliler
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1995</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">106dk</span>
+
+                            </div>
+                            <a href="baba.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/Aslan Kral.jpg"
+                                width="205px"
+                                height="280px" alt class="img-fluid">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>44</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Aslan Kral
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1944
+                                </div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">
+                                    88dk
+                                </span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/Geçmişin gölgesinde.jpg" alt
+                                class="img-fluid"
+                                width="192px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>45</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Geçmişin gölgesinde
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">
+                                    1998</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">119dk</span>
+
+                            </div>
+                            <a href="Esaretin_Bedeli.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/Piyanist.jpg" alt
+                                class="img-fluid"
+                                width="205px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>46</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Piyanist</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1 Mart
+                                    2024</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">
+                                    165dk</span>
+
+                            </div>
+                            <a href="Yeşil_Yol.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/Casablanca.jpg" alt
+                                class="img-fluid"
+                                width="188px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>47</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Casablanca</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1942</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">
+                                    110dk</span>
+
+                            </div>
+                            <a href="Yeşil_Yol.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/Sapık.jpg"
+                                alt
+                                class="img-fluid" width="188px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>48</h1></strong>
+                            <a href="Başlangıç.html">
+                                <h4 class="mb-0">Sapık</h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1960</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">109dk</span>
+
+                            </div>
+                            <a href="Başlangıç.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6  d-none d-lg-block img-fluid">
+                            <img src="images/Can Dostum.jpg" alt
+                                class="img-fluid"
+                                width="205px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6  p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>49</h1></strong>
+                            <a href="#">
+                                <h4 class="mb-0">Can Dostum
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">2011</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">
+                                    112dk</span>
+
+                            </div>
+                            <a href="Yeşil_Yol.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6  col-md-12 col-sm-12 col-xl-6"
+                    style="margin-top: 10px;">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm h-md-250 position-relative">
+                        <div
+                            class="col-6 col-lg-6  col-md-9 col-sm-9 col-xl-6 d-none d-lg-block img-fluid">
+                            <img src="images/Batıda Kan Var.jpg"
+                                alt
+                                class="img-fluid" width="185px"
+                                height="280px">
+                        </div>
+                        <div
+                            class="col-6 col-lg-6  col-md-3 col-sm-3 col-xl-6 p-4 d-flex flex-column position-static"
+                            style="justify-content: center;">
+                            <strong
+                                class="d-inline-block mb-2  "><h1>50</h1></strong>
+                            <a href="Başlangıç.html">
+                                <h4 class="mb-0">Batıda Kan Var
+                                </h4>
+
+                            </a>
+                            <div style="margin-top: 2px;">
+                                <div class="mb-1 text-body-secondary">1968</div>
+                                <span
+                                    class="badge text-bg-dark align-self-start">174dk</span>
+
+                            </div>
+                            <a href="Başlangıç.html">
+                                <button class="btn btn-outline-primary"
+                                    style="margin-top: 10px;"
+                                    type="submit">Filmi İzle</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            
+            <div class="row" id="footer">
+                <div class="col-12">
+                    <footer class="py-5">
+                        <div class="row">
+                            <div class="col-6 col-md-2 mb-3">
+                                <h5>Bölüm</h5>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item mb-2"><a
+                                            href="index.html"
+                                            class="nav-link p-0 text-body-secondary">Ana
+                                            Sayfa</a></li>
+                                    <li class="nav-item mb-2"><a href="#"
+                                            class="nav-link p-0 text-body-secondary">İletişim</a></li>
+                                    <li class="nav-item mb-2"><a
+                                            href="kategori.html"
+                                            class="nav-link p-0 text-body-secondary">Kategoriler</a></li>
+                                    <li class="nav-item mb-2"><a href="#"
+                                            class="nav-link p-0 text-body-secondary">Filmler</a></li>
+                                    <li class="nav-item mb-2"><a href="#"
+                                            class="nav-link p-0 text-body-secondary">Diziler</a></li>
+                                    <li class="nav-item mb-2"><a href="#"
+                                            class="nav-link p-0 text-body-secondary">Hakkımızda</a></li>
+                                </ul>
+
+                            </div>
+                            <div class="col-6 col-md-2 mb-3">
+                                <a href="#"
+                                    class="active"><h5>Kategoriler</h5></a>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item mb-2"><a
+                                            href="kategori.html"
+                                            class="nav-link p-0 text-body-secondary">Aksiyon</a></li>
+                                    <li class="nav-item mb-2"><a
+                                            href="kategori.html"
+                                            class="nav-link p-0 text-body-secondary">Macera</a></li>
+                                    <li class="nav-item mb-2"><a
+                                            href="kategori.html"
+                                            class="nav-link p-0 text-body-secondary">Bilim
+                                            Kurgu</a></li>
+                                    <li class="nav-item mb-2"><a
+                                            href="kategori.html"
+                                            class="nav-link p-0 text-body-secondary">Dram</a></li>
+                                    <li class="nav-item mb-2"><a
+                                            href="kategori.html"
+                                            class="nav-link p-0 text-body-secondary">Aşk</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-5 offset-md-1 mb-3">
+                                <form>
+                                    <h5>Daha fazla film için katılmayı
+                                        unutmayın.</h5>
+                                    <p>Her hafta 2 yeni film.</p>
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1"
+                                                class="form-label">Email
+                                                Adresi</label>
+                                            <input type="email"
+                                                class="form-control"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                            <div id="emailHelp"
+                                                class="form-text">E-postanızı
+                                                asla
+                                                başkasıyla
+                                                paylaşmayacağız.</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1"
+                                                class="form-label">Şifre</label>
+                                            <input type="password"
+                                                class="form-control"
+                                                id="exampleInputPassword1">
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox"
+                                                class="form-check-input"
+                                                id="exampleCheck1">
+                                            <label class="form-check-label"
+                                                for="exampleCheck1">Beni
+                                                hatırla</label>
+                                        </div>
+                                        <button type="submit"
+                                            class="btn btn-primary">Katıl</button>
+
+                                    </form>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div
+                            class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                            <p>&copy; 2024 Company, Inc. Tüm hakları
+                                saklıdır.</p>
+
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    </body>
+</html>

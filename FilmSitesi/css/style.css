@@ -1,0 +1,44 @@
+/* body{
+    background-color: black;
+    color: white;
+} */
+body a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#Carousel{
+    padding-top:15px ;
+}
+.Text-color{
+    color: rgb(0, 0, 0);
+
+}
+#Carrousel-text a{
+    color: rgb(45, 45, 253);
+    
+}
+a :hover{
+    color: rgb(25, 70, 219);
+}
+a :active{
+    color: rgb(0, 0, 0);
+}
+#cizgi-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100px; 
+}
+#cizgi-container1 {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100px; 
+}
+#cizgi-container2 {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100px; 
+}
+
